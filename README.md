@@ -1,4 +1,5 @@
 # 🧠 SentiAI — Customer Sentiment Intelligence Platform
+https://ai-dashboard-lrek.onrender.com/
 
 > A full-stack web application that classifies customer reviews as **Positive 😊**, **Negative 😠**, or **Neutral 😐** using NLP.
 
