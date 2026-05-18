@@ -152,6 +152,7 @@ def _build_summary(results):
     for r in results: counts[r["sentiment"]]+=1
     percentages={k:round(v/total*100,1) if total else 0 for k,v in counts.items()}
     return {"total":total,"counts":counts,"percentages":percentages,"dominant":max(counts,key=counts.get)}
-
-if __name__=="__main__":
-    app.run(debug=True,port=5000)
+  
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
